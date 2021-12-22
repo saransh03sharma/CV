@@ -10,6 +10,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Saransh Sharma</title>
     <style>
+        p {
+            padding:0px;
+            margin:0px;
+        }
 
     .flip-card {
         background-color: transparent;
@@ -159,9 +163,13 @@
   body {
     font-size:0.5em;
   }
+  .alert alert-warning alert-dismissible fade show p{
+      padding-left:10px;
+  }
   h1 {
          font-size:4em;
      }
+
      img {
          height:15%;
          width:20%;
@@ -170,6 +178,7 @@
          height:50%;
          position:realtive;
          top:-33px;
+         font-size:1.2em;
      }
      #face {
          display:none;
@@ -177,13 +186,27 @@
      #span {
          margin:auto;
      }
+     .flip-card{
+         position:absolute;
+         top:25%;
+         font-size:0.4em;
+         height:30%;
+     }
+     .flip-card-back{
+         font-size:1.2em;
+         padding-left:2px;
+         padding-right:2px;
+     }
+     .flip-card-back p{
+         font-size:2.8em;
+     }
 }
     </style>
     </head>
     <body>
         <div id="container">
             <div class="alert alert-warning alert-dismissible fade show" role="alert" style="background-color:rgb(30, 153, 30); color:white;font-size:0.8em;height:40px;padding:10px;">
-                <strong>Welcome Everyone! </strong>This website is created with the aim of creating a CV and practicing the basic concepts of HTML and CSS.
+                <p></p><strong>Welcome Everyone! </strong>This website is created with the aim of creating a CV and practicing the basic concepts of HTML and CSS.</p>
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" style="padding-top:10px"></button>
             </div>
             <div id="header">
