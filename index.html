@@ -15,50 +15,6 @@
             margin:0px;
         }
 
-    .flip-card {
-        background-color: transparent;
-        width: 20vw;
-        height: 50vh;
-        perspective: 300vh;
-        position:absolute;
-        top:65vh;
-    }
-
-    .flip-card-inner {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        transition: transform 0.6s;
-        transform-style: preserve-3d;
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    }
-
-    .flip-card:hover .flip-card-inner {
-        transform: rotateY(-180deg);
-    }
-
-    .flip-card-front, .flip-card-back {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-        padding:10%;
-        padding-top:20%;
-    }
-
-    .flip-card-front {
-        background-color: white;
-        color: black;
-        padding-top:40%;
-    }
-
-    .flip-card-back {
-        background-color: #2980b9;
-        color: white;
-        transform: rotateY(180deg);
-    }
      * {
         margin:0;
         padding:0;
@@ -81,7 +37,7 @@
     }
     .alert {
         padding: 0.5vw;
-        background-color: rgb(129, 197, 28);
+        background-color: rgb(106, 156, 30);
         color: white;
     }
 
@@ -141,14 +97,59 @@
         top:-10vw;
         font-weight:700;
     }
+    .flip-card {
+        background-color: transparent;
+        width: 20vw;
+        height: 50vh;
+        perspective: 300vh;
+        position:absolute;
+        top:55vh;
+    }
+
+    .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    }
+
+    .flip-card:hover .flip-card-inner {
+        transform: rotateY(-180deg);
+    }
+
+    .flip-card-front, .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        padding:10%;
+        padding-top:10%;
+    }
+
+    .flip-card-front {
+        background-color: white;
+        color: black;
+        padding-top:40%;
+    }
+
+    .flip-card-back {
+        background-color: #2980b9;
+        color: white;
+        transform: rotateY(180deg);
+    }
+    
     #text1 {
-        left:15vw;;
+        left:12vw;;
     }
     #text2 {
-        left:40vw;
+        left:37vw;
         }
     #text3 {
-        left:66vw;
+        left:60vw;
         }
     #face {
         height:20vh;
@@ -180,6 +181,10 @@
               font-size:0.5em;
               font-family:'Times New Roman', Times, serif;
             }
+            .closebtn {
+                margin-bottom:16px;
+                font-size:2em;
+            }
             #nav {
                 padding-right:28%;
                 top:-3vh;
@@ -189,9 +194,10 @@
                 text-align:center;
                 }
             #nav li:hover {
-                border:2px black solid;
+                border-bottom:2px black solid;
             }
             #quote {
+                position:relative;
                 top:-5vh;
                 height:40%;
             }
@@ -211,10 +217,12 @@
             }
             .flip-card{
                 position:absolute;
-                height:25%;
-                top:38%;
+                height:100%;
+                top:100%;
+                margin-left:-2%;
             }
             .flip-card-back h1{
+                color:yellow;
                 font-size:1.2em;
                 font-weight:bold;
             }
@@ -242,47 +250,42 @@
                         <div id="text">
                             <img src="face.jpg" id="face"><br>
                         <span style="font-size:3vw;letter-spacing:3px;font-weight:800;">Saransh Sharma</span><br>Dual Degree<br> Computer Science and Engineering Department,<br>IIT Kharagpur
+                        <div class="flip-card" id="text1">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="soft.png" alt="Avatar" class="image">
+                                </div>  
+                            <div class="flip-card-back">
+                                <h1>Software Development</h1> 
+                                <p>Interested in software development</p> 
+                                <p>Programming languages: C and C++</p>
+                            </div>
+                            </div>
                         </div>
-                </div>
-                <div class="flip-card" id="text1">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <img src="soft.png" alt="Avatar" class="image">
-                            </div>  
+                <div class="flip-card" id="text2">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="leader.png" alt="Avatar" class="image">
+                        </div>  
                         <div class="flip-card-back">
-                            <h1>Software Development</h1> 
-                            <p>Interested in software development</p> 
-                            <p>Programming languages: C and C++</p>
+                        <h1>Arduino</h1> 
+                        <p>Had the opportunity to explore and work on Arduino and construct an automated home lock system with SMS alert services.</p> 
+                        <p><a href="https://drive.google.com/file/d/1ep1mqpR8KZKWgXaLvylIsAoESuI87Ibs/view" style="color:yellow" target="_blank">Project Link</a></p>
                         </div>
-                        </div>
+                     </div>
                 </div>
-            </div>
-            <div class="flip-card" id="text2">
+            <div class="flip-card" id="text3">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img src="leader.png" alt="Avatar" class="image">
+                        <img src="web.png" alt="Avatar" class="image">
                     </div>  
                     <div class="flip-card-back">
-                    <h1>Arduino</h1> 
-                    <p>Had the opportunity to explore and work on Arduino and construct an automated home lock system with SMS alert services.</p> 
-                    <p><a href="https://drive.google.com/file/d/1ep1mqpR8KZKWgXaLvylIsAoESuI87Ibs/view" style="color:yellow" target="_blank">Project Link</a></p>
+                    <h1>Web Development</h1> 
+                    <p>Programming languages used: HTML, CSS, JavaScript</p> 
+                    <p>Frameworks being explored: JQuery, Django, Bootstrap</p>
                     </div>
                  </div>
             </div>
-        </div>
-        <div class="flip-card" id="text3">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <img src="web.png" alt="Avatar" class="image">
-                </div>  
-                <div class="flip-card-back">
-                <h1>Web Development</h1> 
-                <p>Programming languages used: HTML, CSS, JavaScript</p> 
-                <p>Frameworks being explored: JQuery, Django, Bootstrap</p>
-                </div>
-             </div>
-        </div>
-        </div>
         </div>
         </div>
         <div style="position:relative;bottom:-40vh; height:2vh; background-color: black;">hello</div>
