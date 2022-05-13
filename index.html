@@ -30,36 +30,19 @@
         padding:0 20px 10px 20px; 
     }
     #nav {
-        height:45px;
+        height:8vh;
         width:100%;
         position:relative;
-        top:-20px;
-    }
-    .alert {
-        padding: 0.5vw;
-        background-color: rgb(106, 156, 30);
-        color: white;
-    }
-
-    .closebtn {
-        margin-left: 15px;
-        color: white;
-        font-weight: bold;
-        float: right;
-        font-size: 2vw;
-        line-height: 20px;
-        cursor: pointer;
-        transition: 0.3s;
-}
-
-    .closebtn:hover {
-        color: black;
+        top:-15px;
+        padding:1vh;
+        padding-top:1.5vh;
+        background-color: #151565; 
+        color:white;
     }
     ul {
-        float:right;
         margin:0;
         padding:0;
-        margin-left:20px;
+        margin-left:-5px;
     }
     li{
         float:left;
@@ -67,9 +50,11 @@
         cursor:pointer;
         font-size:1.1em;
         padding:8px 10px;
+       margin-right:1vw;
     }
     li:hover{
-        border-bottom:3px black solid;
+        border-bottom:5px rgb(255, 255, 255) solid;
+        background-color:#000000;
     }
     #quote {
         background-color:#929292;
@@ -79,7 +64,7 @@
         height:80vh;
         color:white;
         position:relative;
-        top:-2.8vh;
+        top:-2vh;
         font-size:1.3vw;
     }
     #logo {
@@ -94,7 +79,7 @@
         text-align:center;
         position:relative;
         left:2vw;
-        top:-10vw;
+        top:10vh;
         font-weight:700;
     }
     .flip-card {
@@ -103,7 +88,7 @@
         height: 50vh;
         perspective: 300vh;
         position:absolute;
-        top:55vh;
+        top:48vh;
     }
 
     .flip-card-inner {
@@ -176,6 +161,57 @@
      width:100%;
      max-width:100%;
  }
+    #edu{
+        position:absolute;
+        top:120vh;
+        color:black;
+    }
+    .textbox {
+        margin-left:7vw;
+        width:80vw;
+        height:20vh;
+        border-radius:5vh;
+        background-color:blanchedalmond;
+        margin-bottom:5vh;
+        position:relative;
+    }
+    .title {
+        width:10vw;
+        height:5vh;
+        background-color:blue;
+        position:absolute;
+        top:2vh;
+        border-radius:5vh;
+        left:8vw;
+    }
+
+@media screen and (max-width:1000px) {
+    .flip-card-back h1{
+            color:yellow;
+            font-size:2em;
+            font-weight:bold;
+        }
+        .flip-card{
+                position:absolute;
+                height:30vh;
+                top:35vh;
+            }
+            #quote{
+                height:60vh;
+                position:absolute;
+                top:6vh;
+            }
+            #nav li{
+                position:relative;
+                top:-1vh;
+                padding-top:1.5vh;
+            }
+            #nav li:hover{
+                border-bottom:5px white solid;
+            }
+            #nav{
+                width:97.2%;
+            }
  @media screen and (max-width: 600px) {
             body {
               font-size:0.5em;
@@ -188,37 +224,33 @@
             #nav {
                 padding-right:28%;
                 top:-3vh;
-            
+                
             }
             #nav li{
-                text-align:center;
-                }
-            #nav li:hover {
-                border-bottom:2px black solid;
+                text-align:center;   
             }
+            
             #quote {
                 position:relative;
                 top:-5vh;
                 height:40%;
             }
-            #logo {
-                height:15%;
-                width:20%;
-            }
-            #logo1{
-                height:20%;
-                width:20%;
+            #text{
+                position:relative;
+                top:-0.2vh;
+                height:40vh;
             }
             #face {
-               height:10%;
-               width:10%;
-               border-radius:20%;
-               margin-left:20%;
+               height:10vh;
+               width:10vh;
+               border-radius:50%;
+               margin-top:8vh;
+               
             }
             .flip-card{
                 position:absolute;
-                height:100%;
-                top:100%;
+                height:25vh;
+                top:30vh;
                 margin-left:-2%;
             }
             .flip-card-back h1{
@@ -231,10 +263,7 @@
     </head>
     <body>
         <div id="container">
-            <div class="alert">
-            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
-            <strong>Welcome Everyone! </strong>This website is created with the aim of creating a CV and practicing the basic concepts of HTML and CSS.</p>
-            </div>
+            
             <div id="header">
                 <div id="nav">
                     <ul>
@@ -245,8 +274,6 @@
                 </div>
                 <div class="clear"></div>
                 <div id="quote">
-                        <img src="logo.jpeg" height=25% id="logo">
-                        <img src="logo 1.png" height=25% style="float:right;padding:10px" id="logo1">
                         <div id="text">
                             <img src="face.jpg" id="face"><br>
                         <span style="font-size:3vw;letter-spacing:3px;font-weight:800;">Saransh Sharma</span><br>Dual Degree<br> Computer Science and Engineering Department,<br>IIT Kharagpur
@@ -258,7 +285,7 @@
                             <div class="flip-card-back">
                                 <h1>Software Development</h1> 
                                 <p>Interested in software development</p> 
-                                <p>Programming languages: C and C++</p>
+                                <p>Programming languages: C, C++, Python</p>
                             </div>
                             </div>
                         </div>
@@ -286,9 +313,26 @@
                     </div>
                  </div>
             </div>
+            <div id="edu">
+                <h1>Education</h1>
+                <div class="box">
+                    <div class="title">
+                        hello
+                    </div>
+                    <div class="textbox">
+                        bye
+                    </div>
+                </div>
+                
+            </div>
         </div>
         </div>
-        <div style="position:relative;bottom:-40vh; height:2vh; background-color: black;">hello</div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script>
+        $(".title").click(function(){
+            alert($(this.textbox).html());
+            $(this.textbox).toggle();
+        })
+    </script>
     </body>
 </html>
